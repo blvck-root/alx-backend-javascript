@@ -8,7 +8,7 @@ const VALID_MAJORS = ['CS', 'SWE'];
 /**
  * Student route handlers.
  */
-export default class StudentsController {
+class StudentsController {
   static getAllStudents(request, response) {
     const dataPath = process.argv.length > 2 ? process.argv[2] : '';
 
@@ -68,3 +68,5 @@ export default class StudentsController {
       });
   }
 }
+
+module.exports = StudentsController;
